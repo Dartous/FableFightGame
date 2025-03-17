@@ -6,8 +6,9 @@ public class BulletScript : MonoBehaviour
 {
     #region Variables
     [Header("Can adjust these 2")]
-    public bool isDestroyedOnHit;
-    public int destroyAfter = 6;
+    private float destroyAfter;
+    private int attackForce;
+    private bool applyForce;
 
     [Header("Do NOT touch these")]
     [SerializeField]
@@ -15,11 +16,17 @@ public class BulletScript : MonoBehaviour
     private Vector3 oldPos;
     [HideInInspector]
     public int damage = 1;
+    private bool hasDamaged = false;
+    public BulletSO bulletType;
     #endregion
 
     void Start()
     {
-        isDestroyedOnHit = true;
+        //assign things depending on the bullet type
+        destroyAfter = bulletType.destroyAfter;
+        attackForce = bulletType.attackForce;
+        applyForce = bulletType.applyForce;
+
         StartCoroutine(destroyTimer());
         oldPos = transform.position;
     }
@@ -32,25 +39,26 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //add bool to check if has dealt damage
         try
         {
-            //deal damage
-            try
+            if (!hasDamaged)
             {
-                collision.transform.GetComponent<EnemyScript>().hp -= damage;
+                //deal damage
+                collision.transform.GetComponent<UnitScript>().hp -= damage; collision.transform.GetComponent<UnitScript>().hp -= damage;
+                hasDamaged = true;
             }
-            catch 
+            
+            if (applyForce)
             {
-                collision.transform.GetComponent<FriendlyScript>().hp -= damage;
+                //apply force to push the enemy back on impact
+                collision.transform.GetComponent<Rigidbody>().AddForce(transform.forward * attackForce, ForceMode.Impulse);
             }
+
         }
         catch { }
 
-        //check if its destroyed on hit
-        if (isDestroyedOnHit)
-        {
-            //destroy bullet
-            Destroy(this.gameObject);
-        }
+        //destroy bullet
+        Destroy(this.gameObject);
     }
 }

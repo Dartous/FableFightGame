@@ -1,18 +1,21 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Enemy_SO", menuName = "Scriptable Objects/Enemy_SO")]
+[CreateAssetMenu(fileName = "Unit_SO", menuName = "Scriptable Objects/Unit")]
 public class UnitSO : ScriptableObject
 {
     #region Initialize Variables
     [Header("Stats")]
-    public int moveSpeed;
+    public bool canMove;
+    public float moveSpeed;
     public int hp;
     public float attackForce;
     public int attackDamage;
     public float attackSpeed;
     public float attackRange;
+    public int attackLanes;
 
     [Header("Tags")]
+    public bool enemy;
     public bool damagable;
     public bool forceAffected;
 
