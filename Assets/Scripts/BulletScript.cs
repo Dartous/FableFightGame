@@ -39,17 +39,34 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //add bool to check if has dealt damage
         try
         {
-            if (!hasDamaged)
+            UnitScript us = collision.transform.GetComponent<UnitScript>();
+            WizardHat wh = collision.transform.GetComponent<WizardHat>();
+
+            //check if it has already dealt damage to prevent hitting multiple stuff at once
+            //check if the target is damagable
+            if (!hasDamaged && us.damagable)
             {
                 //deal damage
-                collision.transform.GetComponent<UnitScript>().hp -= damage; collision.transform.GetComponent<UnitScript>().hp -= damage;
+                us.hp -= damage;
+
+                //set hasDamaged to true
+                hasDamaged = true;
+            }
+            //also do that for the wizard hat
+            else if (!hasDamaged && wh.damagable)
+            {
+                //deal damage
+                wh.hp -= damage;
+
+                //set hasDamaged to true
                 hasDamaged = true;
             }
             
-            if (applyForce)
+            //apply force if the bullet applies force
+            //check if the target is force affected
+            if (applyForce && us.forceAffected)
             {
                 //apply force to push the enemy back on impact
                 collision.transform.GetComponent<Rigidbody>().AddForce(transform.forward * attackForce, ForceMode.Impulse);

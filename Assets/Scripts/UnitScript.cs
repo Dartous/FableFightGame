@@ -8,6 +8,7 @@ public class UnitScript : MonoBehaviour
     [Header("Attach these")]
     public Transform attackPoint;
     public UnitSO unitType;
+    public GameObject upgradedModel;
 
     //get this from the UnitSO
     [HideInInspector]
@@ -52,6 +53,9 @@ public class UnitScript : MonoBehaviour
     [HideInInspector]
     public bool isDead = false;
 
+    //upgrades
+    public bool upgradeReady = false;
+
     //allow for 3 states selection
     [HideInInspector]
     public State state;
@@ -91,11 +95,11 @@ public class UnitScript : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        //if 0 hp - destroy
-        CheckHP();
-
         if (!isDead)
         {
+            //if 0 hp - destroy
+            CheckHP();
+
             //check if an enemy or tower is in attackRange, depending on the unit
             if (enemy)
             {
@@ -137,6 +141,7 @@ public class UnitScript : MonoBehaviour
         transform.Translate(-transform.forward * moveSpeed * Time.deltaTime);
     }
 
+    #region Attack
     public virtual void Attack()
     {
         //set attack animations
@@ -169,4 +174,15 @@ public class UnitScript : MonoBehaviour
         //allow to attack again depending on the attack speed
         Invoke(nameof(ResetAttack), attackSpeed);
     }
+    #endregion
+
+    #region Upgrades
+    public void OnMouseDown()
+    {
+        if (upgradeReady)
+        {
+
+        }
+    }
+    #endregion
 }

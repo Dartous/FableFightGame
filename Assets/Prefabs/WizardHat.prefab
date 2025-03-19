@@ -148,10 +148,10 @@ GameObject:
   - component: {fileID: 3649646097129870178}
   - component: {fileID: 3224887488013158099}
   - component: {fileID: 4844700233988609371}
-  - component: {fileID: 2254647233314230762}
-  - component: {fileID: 5313906910138005684}
+  - component: {fileID: 1381028728230434067}
+  - component: {fileID: 2219340683510452005}
   m_Layer: 6
-  m_Name: GelatinousCube
+  m_Name: WizardHat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,8 +166,8 @@ Transform:
   m_GameObject: {fileID: 6413409366727289469}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 4.37, z: 7.2868}
-  m_LocalScale: {x: 1.45, y: 0.54047, z: 1.45}
+  m_LocalPosition: {x: 4.6, y: 4.32, z: -6.8779}
+  m_LocalScale: {x: 1.1424115, y: 0.51494426, z: 1.1424115}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4000352294802247788}
@@ -251,7 +251,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!114 &2254647233314230762
+--- !u!114 &1381028728230434067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,37 +260,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6413409366727289469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea1be6287c54ae4b80696e90a0f2eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: e518650c1d9ce364aadd1ee7869409d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 4000352294802247788}
-  unitType: {fileID: 11400000, guid: f4c42035c3b5ace44b2aae34cd34f25a, type: 2}
-  enemy: 0
-  canMove: 0
-  moveSpeed: 0
-  hp: 0
-  attackForce: 0
-  attackDamage: 0
-  attackSpeed: 0
-  attackRange: 0
-  attackLanes: 0
-  damagable: 0
+  hp: 1
+  knowledge: 0
+  maxKnowledge: 10
+  knowledgeGenerationStartDelayInSeconds: 1
+  knowledgeGenerationPerTick: 2
+  knowledgeGenerationTickRateInSeconds: 1
+  damagable: 1
   forceAffected: 0
-  bullet: {fileID: 0}
-  rb: {fileID: 0}
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsTower:
-    serializedVersion: 2
-    m_Bits: 0
   animator: {fileID: 0}
-  canAttack: 1
-  hasAttacked: 0
-  targetInAttackRange: 0
-  isDead: 0
-  state: 0
---- !u!65 &5313906910138005684
+  rb: {fileID: 0}
+--- !u!65 &2219340683510452005
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,5 +292,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9999999, y: 5.353576, z: 0.9999999}
-  m_Center: {x: 0, y: 1.6767893, z: 0.0000002466399}
+  m_Size: {x: 1.1014922, y: 3.774333, z: 1.1700325}
+  m_Center: {x: 0.050744727, y: 1.1161671, z: 0.08501549}
