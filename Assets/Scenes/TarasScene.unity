@@ -886,13 +886,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6413409366727289469, guid: 476d51fc671e42b4fa8bc24c82d2c6f1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1994453327}
   m_SourcePrefab: {fileID: 100100000, guid: 476d51fc671e42b4fa8bc24c82d2c6f1, type: 3}
 --- !u!4 &1994453325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2733076752279050177, guid: 476d51fc671e42b4fa8bc24c82d2c6f1, type: 3}
   m_PrefabInstance: {fileID: 1994453324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1994453326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6413409366727289469, guid: 476d51fc671e42b4fa8bc24c82d2c6f1, type: 3}
+  m_PrefabInstance: {fileID: 1994453324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1994453327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994453326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88703e04820325c43a04feaf24e49bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101727548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1190,18 @@ PrefabInstance:
     - target: {fileID: 2733076752279050177, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313906910138005684, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
+      propertyPath: m_Size.y
+      value: 5.920854
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313906910138005684, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
+      propertyPath: m_Center.y
+      value: 1.9054242
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313906910138005684, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
+      propertyPath: m_Center.z
+      value: 0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 6413409366727289469, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
       propertyPath: m_Name

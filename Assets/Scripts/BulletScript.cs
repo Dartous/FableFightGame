@@ -42,7 +42,6 @@ public class BulletScript : MonoBehaviour
         try
         {
             UnitScript us = collision.transform.GetComponent<UnitScript>();
-            WizardHat wh = collision.transform.GetComponent<WizardHat>();
 
             //check if it has already dealt damage to prevent hitting multiple stuff at once
             //check if the target is damagable
@@ -54,8 +53,25 @@ public class BulletScript : MonoBehaviour
                 //set hasDamaged to true
                 hasDamaged = true;
             }
-            //also do that for the wizard hat
-            else if (!hasDamaged && wh.damagable)
+            
+            //apply force if the bullet applies force
+            //check if the target is force affected
+            if (applyForce && us.forceAffected)
+            {
+                //apply force to push the enemy back on impact
+                collision.transform.GetComponent<Rigidbody>().AddForce(transform.forward * attackForce, ForceMode.Impulse);
+            }
+
+        }
+        catch { }
+
+        try
+        {
+            WizardHat wh = collision.transform.GetComponent<WizardHat>();
+
+            //check if it has already dealt damage to prevent hitting multiple stuff at once
+            //check if the target is damagable
+            if (!hasDamaged && wh.damagable)
             {
                 //deal damage
                 wh.hp -= damage;
@@ -63,10 +79,10 @@ public class BulletScript : MonoBehaviour
                 //set hasDamaged to true
                 hasDamaged = true;
             }
-            
+
             //apply force if the bullet applies force
             //check if the target is force affected
-            if (applyForce && us.forceAffected)
+            if (applyForce && wh.forceAffected)
             {
                 //apply force to push the enemy back on impact
                 collision.transform.GetComponent<Rigidbody>().AddForce(transform.forward * attackForce, ForceMode.Impulse);

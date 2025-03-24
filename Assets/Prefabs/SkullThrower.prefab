@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1794254776631293307}
   - component: {fileID: 478711230804409808}
   - component: {fileID: 5038452199196987464}
+  - component: {fileID: 1996173780957019613}
   m_Layer: 6
   m_Name: SkullThrower
   m_TagString: Untagged
@@ -29,15 +30,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333826309196176682}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 4.89312, z: -2.16}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 4.6, y: 6.17, z: -2.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5542169307110109551}
   - {fileID: 664363081943029618}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &7289626572393851196
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 5542169307110109551}
   unitType: {fileID: 11400000, guid: 85f444e309816e9469b94970a2a92214, type: 2}
+  upgradedModel: {fileID: 0}
   enemy: 0
   canMove: 0
   moveSpeed: 0
@@ -153,6 +155,7 @@ MonoBehaviour:
   hasAttacked: 0
   targetInAttackRange: 0
   isDead: 0
+  upgradeReady: 0
   state: 0
 --- !u!65 &5038452199196987464
 BoxCollider:
@@ -175,6 +178,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1996173780957019613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333826309196176682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88703e04820325c43a04feaf24e49bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4623059663195999086
 GameObject:
   m_ObjectHideFlags: 0

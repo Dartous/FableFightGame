@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 8851931102156685255}
   - component: {fileID: 7249282563938072428}
   - component: {fileID: 6509996719275423103}
+  - component: {fileID: 142927564688280918}
   m_Layer: 6
   m_Name: MushroomGuy
   m_TagString: Untagged
@@ -165,7 +166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8123555503081346966}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 4.6, y: 4.6, z: 5.5094}
   m_LocalScale: {x: 1, y: 0.763893, z: 1.0795}
   m_ConstrainProportionsScale: 0
@@ -173,7 +174,7 @@ Transform:
   - {fileID: 3375347700315651027}
   - {fileID: 7711943725277584846}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &511138733297804160
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -265,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 3375347700315651027}
   unitType: {fileID: 11400000, guid: 69bf2f5d1c4c0dc42929ddd06fa1b6d8, type: 2}
+  upgradedModel: {fileID: 0}
   enemy: 0
   canMove: 0
   moveSpeed: 0
@@ -289,6 +291,7 @@ MonoBehaviour:
   hasAttacked: 0
   targetInAttackRange: 0
   isDead: 0
+  upgradeReady: 0
   state: 0
 --- !u!65 &6509996719275423103
 BoxCollider:
@@ -311,3 +314,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 3.5272698, z: 1}
   m_Center: {x: 0, y: 0.76363605, z: 0}
+--- !u!114 &142927564688280918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8123555503081346966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88703e04820325c43a04feaf24e49bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
