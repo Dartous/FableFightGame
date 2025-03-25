@@ -13,6 +13,7 @@ public class UnitSO : ScriptableObject
     public float attackSpeed;
     public float attackRange;
     public int attackLanes;
+    public int cost;
 
     [Header("Tags")]
     public bool enemy;

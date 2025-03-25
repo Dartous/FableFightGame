@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class WizardHat : MonoBehaviour
 {
     #region Initiate Variables
+    public int cost = 20;
     public int hp = 1;
     public int knowledge = 0;
     public int maxKnowledge = 10;
