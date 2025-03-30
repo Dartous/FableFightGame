@@ -19,6 +19,7 @@ public class WaveManager : MonoBehaviour
     public float minSpawnRate = 2;
     public int startingWaveStrength = 1;
     public int waveStrengthIncrease = 1;
+    public float spawnPositionSpread = 1.5f;
 
     [Header("For TESTING only")]
     public float currentSpawnRate;
@@ -66,8 +67,13 @@ public class WaveManager : MonoBehaviour
                     //select a random spawn location
                     int randomSpawn = Random.Range(0, spawnPositions.Length);
 
+                    //randomize Z coordinate in order for enemies to not spawn in the same pixel
+                    Vector3 spawnPos = spawnPositions[randomSpawn].transform.position;
+                    float randomZ = Random.Range(spawnPositions[randomSpawn].transform.position.z - spawnPositionSpread, spawnPositions[randomSpawn].transform.position.z + spawnPositionSpread);
+                    Vector3 newSpawnPos = new Vector3 (spawnPos.x, spawnPos.y, randomZ);
+
                     //instantiate an appropriate enemy there
-                    Instantiate(enemies[i], spawnPositions[randomSpawn].transform.position, enemies[i].transform.rotation);
+                    Instantiate(enemies[i], newSpawnPos, enemies[i].transform.rotation);
                 }
             }
         }
