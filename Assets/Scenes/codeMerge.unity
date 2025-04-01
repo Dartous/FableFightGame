@@ -667,7 +667,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 475905571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822267804}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &475905571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,7 +878,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610138972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822267809}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: Skull_TSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &610138972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,7 +1198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: mushroom
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1263,6 +1287,7 @@ GameObject:
   - component: {fileID: 822267807}
   - component: {fileID: 822267806}
   - component: {fileID: 822267805}
+  - component: {fileID: 822267809}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1353,6 +1378,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &822267809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822267804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfd4710105e9b64b99b5c290a9f5206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Build: {fileID: 2101727553}
+  UIHidden_YPos: 0
+  UIShown_YPos: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1685,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1236440001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822267809}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: Mush_TSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1236440001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,7 +1975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: skull thrower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2057,7 +2109,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'cube
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2348,7 +2402,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1910699479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 822267809}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: GC_TSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1910699479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2770,9 +2836,9 @@ MonoBehaviour:
   scrollval: 0
   TakenPositions: []
   Asset:
+  - {fileID: 6413409366727289469, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
   - {fileID: 8123555503081346966, guid: 7aaa6f1a09021c84d96cdae244375d6f, type: 3}
   - {fileID: 1333826309196176682, guid: e79ec2203bd91d44f956ddd19b2c4de0, type: 3}
-  - {fileID: 6413409366727289469, guid: e0038cce2085f004cbd438f2df9a67c7, type: 3}
   - {fileID: 6413409366727289469, guid: 476d51fc671e42b4fa8bc24c82d2c6f1, type: 3}
   RemoveObj: {fileID: 0}
 --- !u!4 &1612244617168773923 stripped
