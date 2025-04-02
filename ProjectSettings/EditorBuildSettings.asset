@@ -5,8 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TarasScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 6f5d0ccdc75fa994f9e7dcae1171d4d0
+  - enabled: 1
+    path: Assets/Scenes/codeMerge.unity
+    guid: 7c0e7aaa725bb804597c232f3bcf612f
+  - enabled: 1
+    path: Assets/Scenes/EndGameScene.unity
+    guid: f8537e5a4ddea8840a8c44cddc340372
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

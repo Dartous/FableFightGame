@@ -8,7 +8,6 @@ public class UnitScript : MonoBehaviour
     [Header("Attach these")]
     public Transform attackPoint;
     public UnitSO unitType;
-    public GameObject upgradedModel;
 
     //get this from the UnitSO
     [HideInInspector]
