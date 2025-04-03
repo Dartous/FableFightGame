@@ -83,6 +83,12 @@ public class WaveManager : MonoBehaviour
         {
             currentSpawnRate += spawnRateIncrease;
         }
+        
+        //make sure it can't go below the threshold
+        if (currentSpawnRate < minSpawnRate)
+        {
+            currentSpawnRate = minSpawnRate;
+        }
 
         //increase wave strength
         currentWaveStrength += waveStrengthIncrease;

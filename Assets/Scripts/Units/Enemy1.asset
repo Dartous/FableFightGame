@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   moveSpeed: 2
-  hp: 10
+  hp: 3
   attackForce: 10
   attackDamage: 1
   attackSpeed: 3
   attackRange: 1
   attackLanes: 0
+  cost: 0
   enemy: 1
   damagable: 1
   forceAffected: 0
