@@ -39,11 +39,6 @@ public class WaveManager : MonoBehaviour
         InvokeRepeating("SpawnEnemies", firstSpawnDelay, currentSpawnRate);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     private void SpawnEnemies ()
     {
         //set temp wave strength for the loop
@@ -55,26 +50,43 @@ public class WaveManager : MonoBehaviour
             //for every enemy in the list
             for (int i = 0; i < enemies.Length; i++)
             {
-                //calculate a random amount of enemies, fitting within the set wave strength
-                int randomAmount = Random.Range(0, currentWaveStrength / enemyStrength[i]);
-
-                //reduce the tempWaveStrength according to the number of enemies summoned
-                tempWaveStrength -= randomAmount * enemyStrength[i];
-
-                //for each enemy
-                for (int j = 0; j < randomAmount; j++)
+                if (enemyStrength[i] > tempWaveStrength)
                 {
-                    //select a random spawn location
-                    int randomSpawn = Random.Range(0, spawnPositions.Length);
-
-                    //randomize Z coordinate in order for enemies to not spawn in the same pixel
-                    Vector3 spawnPos = spawnPositions[randomSpawn].transform.position;
-                    float randomZ = Random.Range(spawnPositions[randomSpawn].transform.position.z - spawnPositionSpread, spawnPositions[randomSpawn].transform.position.z + spawnPositionSpread);
-                    Vector3 newSpawnPos = new Vector3 (spawnPos.x, spawnPos.y, randomZ);
-
-                    //instantiate an appropriate enemy there
-                    Instantiate(enemies[i], newSpawnPos, enemies[i].transform.rotation);
+                    continue;
                 }
+
+                int randomAmount = 0;
+                //try 
+                //{
+                    //calculate a random amount of enemies, fitting within the set wave strength
+                    randomAmount = Random.Range(0, currentWaveStrength / enemyStrength[i]);
+                //}
+                //catch
+                //{
+                //    print("enemyStr is more than tempWaveStr");
+                //}
+
+                //if (randomAmount > 0) 
+                //{
+                    //reduce the tempWaveStrength according to the number of enemies summoned
+                    tempWaveStrength -= randomAmount * enemyStrength[i];
+
+                    //for each enemy
+                    for (int j = 0; j < randomAmount; j++)
+                    {
+                        //select a random spawn location
+                        int randomSpawn = Random.Range(0, spawnPositions.Length);
+
+                        //randomize Z coordinate in order for enemies to not spawn in the same pixel
+                        Vector3 spawnPos = spawnPositions[randomSpawn].transform.position;
+                        float randomZ = Random.Range(spawnPositions[randomSpawn].transform.position.z - spawnPositionSpread, spawnPositions[randomSpawn].transform.position.z + spawnPositionSpread);
+                        Vector3 newSpawnPos = new Vector3(spawnPos.x, spawnPos.y, randomZ);
+
+                        //instantiate an appropriate enemy there
+                        Instantiate(enemies[i], newSpawnPos, enemies[i].transform.rotation);
+                    }
+                //}
+                
             }
         }
 

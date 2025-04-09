@@ -36,6 +36,14 @@ public class UnitScript : MonoBehaviour
     [HideInInspector]
     public GameObject bullet;
 
+    [Header("Sounds")]
+    [HideInInspector]
+    public string walkingSound;
+    [HideInInspector]
+    public string attackSound;
+    [HideInInspector]
+    public string getHitSound;
+
     //other stuff
     [HideInInspector]
     public Rigidbody rb;
@@ -83,6 +91,9 @@ public class UnitScript : MonoBehaviour
         damagable = unitType.damagable;
         forceAffected = unitType.forceAffected;
         bullet = unitType.bullet;
+        walkingSound = unitType.walkingSound;
+        attackSound = unitType.attackSound;
+        getHitSound = unitType.getHitSound;
               
         //Assign other stuff
         rb = GetComponent<Rigidbody>();
@@ -160,6 +171,9 @@ public class UnitScript : MonoBehaviour
 
     public virtual void Fire()
     {
+        //play sound
+        FindObjectOfType<SoundScript>().Play(attackSound);
+
         //instantiate a bullet
         Rigidbody rb = Instantiate(bullet, attackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
 

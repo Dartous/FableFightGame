@@ -18,6 +18,11 @@ public class WizardHat : MonoBehaviour
     public bool forceAffected = false;
     public bool readyToBeCollected = false;
     private bool isDead = false;
+
+    [Header("Make the name exactly as in the SoundScript")]
+    public string getHitSound = "WizardHatGetHit";
+    public string readyToCollectSound = "WizardHatReadyToCollect";
+
     [HideInInspector]
     public Animator animator;
     [HideInInspector]
@@ -75,6 +80,12 @@ public class WizardHat : MonoBehaviour
         //else set the knowledge to be ready to be collected
         else
         {
+            if (!readyToBeCollected)
+            {
+                //play sound
+                FindObjectOfType<SoundScript>().Play(readyToCollectSound);
+            }
+
             readyToBeCollected = true;
         }
     }
