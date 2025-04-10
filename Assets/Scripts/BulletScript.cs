@@ -51,7 +51,7 @@ public class BulletScript : MonoBehaviour
                 us.hp -= damage;
 
                 //play sound
-                FindObjectOfType<SoundScript>().Play(us.getHitSound);
+                FindObjectOfType<SoundScript>().Play(us.getHitSound, 0.5f);
 
                 //set hasDamaged to true
                 hasDamaged = true;
@@ -80,7 +80,7 @@ public class BulletScript : MonoBehaviour
                 wh.hp -= damage;
 
                 //play sound
-                FindObjectOfType<SoundScript>().Play(wh.getHitSound);
+                FindObjectOfType<SoundScript>().Play(wh.getHitSound, 0.5f);
 
                 //set hasDamaged to true
                 hasDamaged = true;
