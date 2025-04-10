@@ -83,7 +83,7 @@ public class WizardHat : MonoBehaviour
             if (!readyToBeCollected)
             {
                 //play sound
-                FindObjectOfType<SoundScript>().Play(readyToCollectSound);
+                FindObjectOfType<SoundScript>().Play(readyToCollectSound, 0.5f);
             }
 
             readyToBeCollected = true;

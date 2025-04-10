@@ -42,7 +42,7 @@ public class WaveManager : MonoBehaviour
     private void SpawnEnemies ()
     {
         //set temp wave strength for the loop
-        float tempWaveStrength = currentWaveStrength;
+        int tempWaveStrength = currentWaveStrength;
 
         //while temp wave strength is above zero
         while (tempWaveStrength > 0)
@@ -60,6 +60,11 @@ public class WaveManager : MonoBehaviour
                 //{
                     //calculate a random amount of enemies, fitting within the set wave strength
                     randomAmount = Random.Range(0, currentWaveStrength / enemyStrength[i]);
+
+                if (i == enemies.Length - 1)
+                {
+                    randomAmount = tempWaveStrength;
+                }
                 //}
                 //catch
                 //{

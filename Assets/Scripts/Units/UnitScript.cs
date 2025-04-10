@@ -172,7 +172,7 @@ public class UnitScript : MonoBehaviour
     public virtual void Fire()
     {
         //play sound
-        FindObjectOfType<SoundScript>().Play(attackSound);
+        FindObjectOfType<SoundScript>().Play(attackSound, 0.5f);
 
         //instantiate a bullet
         Rigidbody rb = Instantiate(bullet, attackPoint.position, Quaternion.identity).GetComponent<Rigidbody>();

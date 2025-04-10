@@ -50,7 +50,7 @@ public class SoundScript : MonoBehaviour
     }
 
     //function to play any sound
-    public void Play(string name)
+    public void Play(string name, float volume)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
@@ -58,7 +58,7 @@ public class SoundScript : MonoBehaviour
             Debug.LogWarning("Sound: " + name + "not found!");
             return;
         }
-        //s.source.Play();
-        soundSource.PlayOneShot(s.clip);
+        s.source.Play();
+        soundSource.PlayOneShot(s.clip, volume);
     }
 }
