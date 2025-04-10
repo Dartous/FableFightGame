@@ -8,6 +8,21 @@ public class Pause_Button : MonoBehaviour
     public ManagerScript ManagerScript;
     public GameObject griddy;
     public Canvas canvas;
+
+    public GameObject mainPause;
+    public GameObject PauseBack;
+    public GameObject Settings;
+
+    private void Start()
+    {
+        mainPause.SetActive(false);
+        Settings.SetActive(false);
+        PauseBack.SetActive(false);
+        Time.timeScale = 1.0f;
+        ManagerScript.paused = false;
+
+    }
+
     public void Pause()
     {
         if (!ManagerScript.paused)
@@ -16,7 +31,8 @@ public class Pause_Button : MonoBehaviour
             Time.timeScale = 0;
             ManagerScript.paused = !ManagerScript.paused; // flips the bool value.
             griddy.gameObject.GetComponent<GridBuild>().enabled = false;
-            canvas.gameObject.SetActive(true);
+            mainPause.SetActive(true);
+            PauseBack.SetActive(true);
             return;
         }
     }
@@ -27,8 +43,21 @@ public class Pause_Button : MonoBehaviour
             Time.timeScale = 1;
             ManagerScript.paused = !ManagerScript.paused;
             griddy.gameObject.GetComponent<GridBuild>().enabled = true;
-            canvas.gameObject.SetActive(false);
+            mainPause.SetActive(false);
+            PauseBack.SetActive(false);
             return;
         }
+    }
+
+    public void Setttings()
+    {
+        mainPause.SetActive(false);
+        Settings.SetActive(true);
+    }
+
+    public void Back()
+    {
+        mainPause.SetActive(true);
+        Settings.SetActive(false);
     }
 }
