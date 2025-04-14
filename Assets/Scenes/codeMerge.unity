@@ -6431,6 +6431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameInstance
       objectReference: {fileID: 0}
+    - target: {fileID: 800273914822869743, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: m_TagString
+      value: GameInstance
+      objectReference: {fileID: 0}
     - target: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: knowledgeBank
       value: 

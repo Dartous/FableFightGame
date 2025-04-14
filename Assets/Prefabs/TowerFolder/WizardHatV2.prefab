@@ -174,7 +174,7 @@ MonoBehaviour:
   readyToCollectSound: WizardHatReadyToCollect
   animator: {fileID: 0}
   rb: {fileID: 0}
-  gs: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+  gs: {fileID: 0}
 --- !u!65 &8911062095087216475
 BoxCollider:
   m_ObjectHideFlags: 0

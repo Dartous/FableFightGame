@@ -27,8 +27,7 @@ public class WizardHat : MonoBehaviour
     public Animator animator;
     [HideInInspector]
     public Rigidbody rb;
-    [Header("Attack These")]
-    public GameScript gs;
+    private GameScript gs;
     #endregion
 
     // Start is called before the first frame update
@@ -36,6 +35,8 @@ public class WizardHat : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        
+        gs = FindAnyObjectByType<GameScript>();
 
         //call generate knowledge function with a specified start delay and tick rate
         InvokeRepeating("GenerateKnowledge", knowledgeGenerationStartDelayInSeconds, knowledgeGenerationTickRateInSeconds);
