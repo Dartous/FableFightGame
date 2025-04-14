@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &800273914822869743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4956517029995152145}
+  - component: {fileID: 3667908969449208655}
+  - component: {fileID: 3753644182719038311}
+  m_Layer: 0
+  m_Name: GameInstance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4956517029995152145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800273914822869743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.361122, y: -30.789095, z: 6.3200936}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3667908969449208655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800273914822869743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c9d30d66bf0c845a288a4d3b8bbfeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledge: 500
+  maxKnowledge: 10000
+  knowledgeBank: {fileID: 0}
+--- !u!114 &3753644182719038311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800273914822869743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655b8455bab942c45ae490bfe5568b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 412590706428881555, guid: 5644aa67315fb13479db903ce6583bf8, type: 3}
+  - {fileID: 412590706428881555, guid: 6e7001b44371c704cbc4eaa585eb5cec, type: 3}
+  - {fileID: 412590706428881555, guid: 6e7001b44371c704cbc4eaa585eb5cec, type: 3}
+  - {fileID: 412590706428881555, guid: 7c9b10e093436b1479550d5a7e9b7527, type: 3}
+  enemyStrength: 04000000030000000200000001000000
+  spawnPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  firstSpawnDelay: 5
+  spawnRate: 20
+  spawnRateIncrease: -0.75
+  minSpawnRate: 1.25
+  startingWaveStrength: 4
+  waveStrengthIncrease: 2
+  spawnPositionSpread: 1.5
+  currentSpawnRate: 0
+  currentWaveStrength: 0

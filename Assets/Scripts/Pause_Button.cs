@@ -30,7 +30,7 @@ public class Pause_Button : MonoBehaviour
             print("I");
             Time.timeScale = 0;
             ManagerScript.paused = !ManagerScript.paused; // flips the bool value.
-            griddy.gameObject.GetComponent<GridBuild>().enabled = false;
+            griddy.gameObject.GetComponent<GridPlacing>().enabled = false;
             mainPause.SetActive(true);
             PauseBack.SetActive(true);
             return;
@@ -42,7 +42,7 @@ public class Pause_Button : MonoBehaviour
         {
             Time.timeScale = 1;
             ManagerScript.paused = !ManagerScript.paused;
-            griddy.gameObject.GetComponent<GridBuild>().enabled = true;
+            griddy.gameObject.GetComponent<GridPlacing>().enabled = true;
             mainPause.SetActive(false);
             PauseBack.SetActive(false);
             return;

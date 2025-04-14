@@ -12,6 +12,9 @@ public class GridPlacing : MonoBehaviour
 
     [SerializeField] private Tilemap MainTilemap;
 
+    [Header("Unit costs in order: hat, skeleton, mushroom, cube")]
+    public int[] costs;
+    public GameScript gameScript;
     public int scrollval = 0 - 1;
     private Vector3 cellPos;
     private Vector3Int cellPosInt;
@@ -133,20 +136,53 @@ public class GridPlacing : MonoBehaviour
             if (scrollval == 0)
             {
                 //0.065
-                WizardHatInstatiate(cepos, objec);
+                //only place if enough money
+                if (gameScript.knowledge >= costs[0])
+                {
+                    WizardHatInstatiate(cepos, objec);
+                    gameScript.knowledge -= costs[0];
+                }
+                else
+                {
+                    print("Not enough Knowledge");
+                }
 
             }
             if (scrollval == 1)
             {
-                SkullThrowerInstantiate(cepos, objec);
+                if (gameScript.knowledge >= costs[1])
+                {
+                    SkullThrowerInstantiate(cepos, objec);
+                    gameScript.knowledge -= costs[1];
+                }
+                else
+                {
+                    print("Not enough Knowledge");
+                }
             }
             if (scrollval == 2)
             {
-                MushroomInstantiate(cepos, objec);
+                if (gameScript.knowledge >= costs[3])
+                {
+                    MushroomInstantiate(cepos, objec);
+                    gameScript.knowledge -= costs[3];
+                }
+                else
+                {
+                    print("Not enough Knowledge");
+                }
             }
             if (scrollval == 3)
             {
-                SlimeInstantiate(cepos, objec);
+                if (gameScript.knowledge >= costs[2])
+                {
+                    SlimeInstantiate(cepos, objec);
+                    gameScript.knowledge -= costs[2];
+                }
+                else
+                {
+                    print("Not enough Knowledge");
+                }
             }
             //f.transform.position = new Vector3(0, offset, 0);
             //Asset.Add(Instantiate(prefab1, cepos, Quaternion.identity));
