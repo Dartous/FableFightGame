@@ -27,10 +27,22 @@ public class GridPlacing : MonoBehaviour
         grid = gridLayout.gameObject.GetComponent<Grid>();
     }
 
+    //public static Vector3 GetMouseWorldPosition()
+    //{
+    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    if (Physics.Raycast(ray, out RaycastHit rc_hit))
+    //    {
+    //        return rc_hit.point;
+    //    }
+    //    else
+    //    {
+    //        return new Vector3(0, 0, 0);
+    //    }
+    //}
     public static Vector3 GetMouseWorldPosition()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit rc_hit))
+        if (Physics.Raycast(ray, out RaycastHit rc_hit) && rc_hit.collider.tag == "GridObject")
         {
             return rc_hit.point;
         }
@@ -39,6 +51,7 @@ public class GridPlacing : MonoBehaviour
             return new Vector3(0, 0, 0);
         }
     }
+
     public int ScrollRight()
     {
         int max = Asset.Count;
