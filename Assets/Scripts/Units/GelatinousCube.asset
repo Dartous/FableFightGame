@@ -20,7 +20,11 @@ MonoBehaviour:
   attackSpeed: 0
   attackRange: 0
   attackLanes: 0
+  cost: 75
   enemy: 0
   damagable: 1
   forceAffected: 0
   bullet: {fileID: 0}
+  walkingSound: 
+  attackSound: 
+  getHitSound: 

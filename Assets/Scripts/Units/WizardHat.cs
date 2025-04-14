@@ -95,7 +95,8 @@ public class WizardHat : MonoBehaviour
     {
         //check if its ready to be collected
         //check if the knowledge bank is full
-        bool isFull = gs.knowledge >= gs.maxKnowledge;
+        //bool isFull = gs.knowledge >= gs.maxKnowledge;
+        bool isFull = false;
         if (readyToBeCollected && !isFull)
         {
             //add collected knowledge to the bank

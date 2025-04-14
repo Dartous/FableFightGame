@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    public GridBuild Build;
+    public GridPlacing Build;
 
     //[SerializeField] AnimationCurve Curve;
     //public GameObject Menu_Button;
@@ -41,18 +41,21 @@ public class UI : MonoBehaviour
     {
 
     }
-    public void GC_TSelect()
+    public void Hat_TSelect()
     {
-        Build.scrollval = 1 - 1;
-    }
-
-    public void Mush_TSelect()
-    {
-        Build.scrollval = 2 - 1;
+        Build.scrollval = 0;
     }
     public void Skull_TSelect()
     {
-        Build.scrollval = 3 - 1;
+        Build.scrollval = 1;
+    }
+    public void Mush_TSelect()
+    {
+        Build.scrollval = 3;
+    }
+    public void GC_TSelect()
+    {
+        Build.scrollval = 2;
     }
     IEnumerator PopupLoop()
     {
