@@ -4205,6 +4205,7 @@ MonoBehaviour:
   ManagerScript: {fileID: 822267811}
   griddy: {fileID: 1389879116}
   canvas: {fileID: 822267807}
+  animator: {fileID: 822267812}
   mainPause: {fileID: 1223846842}
   PauseBack: {fileID: 1649591002}
   Settings: {fileID: 1507229416}
