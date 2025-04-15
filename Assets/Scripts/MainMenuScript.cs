@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public TMP_Text wave;
+
+    private void Start()
+    {
+        wave.text = WaveManager.waveCounter.ToString();
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);

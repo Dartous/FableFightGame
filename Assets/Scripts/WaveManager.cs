@@ -16,7 +16,8 @@ public class WaveManager : MonoBehaviour
     public GameObject[] spawnPositionsWave6;
     private GameObject[] currentSpawnPositions;
     public TMP_Text waveNumbertxt;
-    private int waveCounter;
+    //[HideInInspector]
+    public static int waveCounter;
 
     [Header("Unavailable lanes")]
     public GameObject[] unavailableLanes;
