@@ -54,7 +54,7 @@ public class BulletScript : MonoBehaviour
                 //play sound once in a while
                 if (ran == 0)
                 {
-                    FindObjectOfType<SoundScript>().Play(us.gruntSound, 0.1f);
+                    FindObjectOfType<SoundScript>().Play(us.gruntSound, 0.05f);
                 }
 
                 FindObjectOfType<SoundScript>().Play(us.getHitSound, 0.3f);

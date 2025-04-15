@@ -3159,7 +3159,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.243
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4283,7 +4283,7 @@ Transform:
   m_GameObject: {fileID: 832575517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 47.64189}
+  m_LocalPosition: {x: -29.55, y: 0, z: 47.64189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5206,7 +5206,7 @@ Transform:
   m_GameObject: {fileID: 1188138916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 47.64189}
+  m_LocalPosition: {x: -25.39, y: 0, z: 47.64189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5927,8 +5927,8 @@ Transform:
   m_GameObject: {fileID: 1389879116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.25, y: 4.05, z: 2.93}
-  m_LocalScale: {x: 1.286889, y: 0.8309294, z: 4.0369005}
+  m_LocalPosition: {x: -5.25, y: 4.05, z: 0.67}
+  m_LocalScale: {x: 1.286889, y: 0.8309294, z: 3.1699357}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1866379281}
@@ -7255,7 +7255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: KnightGetHit
+  - name: KnightGrunt
     clip: {fileID: 8300000, guid: 8dc5cb9df4c8e12499717bab17c108e8, type: 3}
     source: {fileID: 1794430722}
     volume: 1
@@ -7273,7 +7273,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
-  - name: BlacksmithGetHit
+  - name: BlacksmithGrunt
     clip: {fileID: 8300000, guid: 9da95947f2c7f3a48b37b3e3be981a4f, type: 3}
     source: {fileID: 1794430722}
     volume: 0.291
@@ -7291,8 +7291,86 @@ MonoBehaviour:
     volume: 0.291
     pitch: 1
     loop: 0
+  - name: FarmerGrunt
+    clip: {fileID: 8300000, guid: 8dc5cb9df4c8e12499717bab17c108e8, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
   - name: SkullThrowerGetHit
-    clip: {fileID: 8300000, guid: 4c0c9511d8148744e890f2d5994e909b, type: 3}
+    clip: {fileID: 8300000, guid: a6918242ebbba6c4993030e9e8364468, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: GelatinousCubeGetHit
+    clip: {fileID: 8300000, guid: ee3182b3aec1ebd4bb25f7c0b9ce9a4f, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: MushroomGetHit
+    clip: {fileID: 8300000, guid: e350568e5fa563a4dadf8eaacfa8c06f, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: HatGetHit
+    clip: {fileID: 8300000, guid: e350568e5fa563a4dadf8eaacfa8c06f, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: KnightGetHit
+    clip: {fileID: 8300000, guid: 56662d57fe48f88479a1ae7160658b35, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: FarmerGetHit
+    clip: {fileID: 8300000, guid: e350568e5fa563a4dadf8eaacfa8c06f, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: BlacksmithGetHit
+    clip: {fileID: 8300000, guid: e5b1d10fe7fcd754f92426013386cff0, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: BlacksmithAttack
+    clip: {fileID: 8300000, guid: ce60b31319432764f8e7a27690988ac5, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: FarmerAttack
+    clip: {fileID: 8300000, guid: 6d17c726da4219a45a0c6262db64cf1b, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: KnightAttack
+    clip: {fileID: 8300000, guid: ec25657bda916b048a6c9abe4cb5e153, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: MushroomAttack
+    clip: {fileID: 8300000, guid: dc048a027450c3249b6f4c82cb114a36, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: SkullThrowerAttack
+    clip: {fileID: 8300000, guid: be23d7b8bfcb30041947053c7c9fd8c0, type: 3}
+    source: {fileID: 1794430722}
+    volume: 0.291
+    pitch: 1
+    loop: 0
+  - name: TowerDeath
+    clip: {fileID: 8300000, guid: d5a15da839f24ca4ebe045a2dd241fff, type: 3}
     source: {fileID: 1794430722}
     volume: 0.291
     pitch: 1
@@ -8772,6 +8850,10 @@ PrefabInstance:
       value: GameInstance
       objectReference: {fileID: 0}
     - target: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: knowledge
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: knowledgeBank
       value: 
       objectReference: {fileID: 1429686221}
@@ -8788,9 +8870,33 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemies.Array.data[2]
+      value: 
+      objectReference: {fileID: 412590706428881555, guid: 7d70d0ceb33db4f488a4246b58a95a61, type: 3}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: enemies.Array.data[3]
       value: 
       objectReference: {fileID: 412590706428881555, guid: 7d70d0ceb33db4f488a4246b58a95a61, type: 3}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemyStrength.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemyStrength.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemyStrength.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemyStrength.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: unavailableLanes.Array.size
       value: 4

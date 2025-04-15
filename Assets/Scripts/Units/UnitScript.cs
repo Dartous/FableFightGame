@@ -133,6 +133,12 @@ public class UnitScript : MonoBehaviour
     {
         if (hp <= 0)
         {
+            if (!unitType.enemy)
+            {
+                //play sound
+                FindObjectOfType<SoundScript>().Play("TowerDeath", 0.8f);
+            }
+
             isDead = true;
             Destroy(this.gameObject);
         }
