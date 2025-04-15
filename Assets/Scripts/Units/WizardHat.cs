@@ -84,7 +84,7 @@ public class WizardHat : MonoBehaviour
             if (!readyToBeCollected)
             {
                 //play sound
-                FindObjectOfType<SoundScript>().Play(readyToCollectSound, 0.5f);
+                FindObjectOfType<SoundScript>().Play(readyToCollectSound, 1f);
             }
 
             readyToBeCollected = true;
@@ -100,6 +100,9 @@ public class WizardHat : MonoBehaviour
         //bool isFull = false;
         if (readyToBeCollected && !isFull)
         {
+            //play sound
+            FindObjectOfType<SoundScript>().Play("WizardHatOnCollect", 0.8f);
+
             //add collected knowledge to the bank
             gs.knowledge += knowledge;
 

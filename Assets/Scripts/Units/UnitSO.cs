@@ -24,8 +24,8 @@ public class UnitSO : ScriptableObject
     public GameObject bullet;
 
     [Header("Sounds: put the name EXACTLY as in the SoundManager")]
-    public string walkingSound;
-    public string attackSound;
     public string getHitSound;
+    public string attackSound;
+    public string gruntSound;
     #endregion
 }

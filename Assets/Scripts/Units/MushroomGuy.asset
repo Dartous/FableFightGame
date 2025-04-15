@@ -26,5 +26,5 @@ MonoBehaviour:
   forceAffected: 0
   bullet: {fileID: 5404157376493548953, guid: 450a6aa4ece012e43a46288084aeaa9f, type: 3}
   walkingSound: 
-  attackSound: 
-  getHitSound: 
+  attackSound: MushroomAttack
+  getHitSound: MushroomGetHit

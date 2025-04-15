@@ -38,11 +38,11 @@ public class UnitScript : MonoBehaviour
 
     [Header("Sounds")]
     [HideInInspector]
-    public string walkingSound;
+    public string getHitSound;
     [HideInInspector]
     public string attackSound;
     [HideInInspector]
-    public string getHitSound;
+    public string gruntSound;
 
     //other stuff
     [HideInInspector]
@@ -91,9 +91,9 @@ public class UnitScript : MonoBehaviour
         damagable = unitType.damagable;
         forceAffected = unitType.forceAffected;
         bullet = unitType.bullet;
-        walkingSound = unitType.walkingSound;
-        attackSound = unitType.attackSound;
         getHitSound = unitType.getHitSound;
+        attackSound = unitType.attackSound;
+        gruntSound = unitType.gruntSound;
               
         //Assign other stuff
         rb = GetComponent<Rigidbody>();

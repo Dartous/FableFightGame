@@ -141,6 +141,9 @@ public class GridPlacing : MonoBehaviour
                 {
                     WizardHatInstatiate(cepos, objec);
                     gameScript.knowledge -= costs[0];
+
+                    //play sound
+                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
                 }
                 else
                 {
@@ -154,6 +157,9 @@ public class GridPlacing : MonoBehaviour
                 {
                     SkullThrowerInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[1];
+
+                    //play sound
+                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
                 }
                 else
                 {
@@ -164,6 +170,9 @@ public class GridPlacing : MonoBehaviour
             {
                 if (gameScript.knowledge >= costs[3])
                 {
+                    //play sound
+                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
+
                     MushroomInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[3];
                 }
@@ -176,6 +185,9 @@ public class GridPlacing : MonoBehaviour
             {
                 if (gameScript.knowledge >= costs[2])
                 {
+                    //play sound
+                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
+
                     SlimeInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[2];
                 }

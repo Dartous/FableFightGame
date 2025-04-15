@@ -27,4 +27,4 @@ MonoBehaviour:
   bullet: {fileID: 0}
   walkingSound: 
   attackSound: 
-  getHitSound: 
+  getHitSound: GelatinousCubeGetHit
