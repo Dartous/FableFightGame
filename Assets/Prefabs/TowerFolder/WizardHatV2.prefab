@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 50
-  hp: 1
+  hp: 3
   knowledge: 0
   maxKnowledge: 25
   knowledgeGenerationStartDelayInSeconds: 1
@@ -174,7 +174,6 @@ MonoBehaviour:
   readyToCollectSound: WizardHatReadyToCollect
   animator: {fileID: 0}
   rb: {fileID: 0}
-  gs: {fileID: 0}
 --- !u!65 &8911062095087216475
 BoxCollider:
   m_ObjectHideFlags: 0

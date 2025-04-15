@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   moveSpeed: 0
-  hp: 1
+  hp: 4
   attackForce: 10
   attackDamage: 1
   attackSpeed: 1

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: farmer
   m_EditorClassIdentifier: 
   canMove: 1
-  moveSpeed: 2
-  hp: 10
+  moveSpeed: 2.5
+  hp: 3
   attackForce: 10
   attackDamage: 1
   attackSpeed: 3

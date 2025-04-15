@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   canMove: 1
-  moveSpeed: 2
-  hp: 10
+  moveSpeed: 1.25
+  hp: 9
   attackForce: 10
-  attackDamage: 1
+  attackDamage: 3
   attackSpeed: 3
   attackRange: 1
   attackLanes: 0

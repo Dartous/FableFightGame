@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   moveSpeed: 0
-  hp: 2
+  hp: 5
   attackForce: 15
-  attackDamage: 1
+  attackDamage: 2
   attackSpeed: 1
   attackRange: 5
   attackLanes: 1
