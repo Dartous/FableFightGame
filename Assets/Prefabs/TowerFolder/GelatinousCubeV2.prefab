@@ -680,9 +680,9 @@ MonoBehaviour:
   damagable: 0
   forceAffected: 0
   bullet: {fileID: 0}
-  walkingSound: 
-  attackSound: 
   getHitSound: 
+  attackSound: 
+  gruntSound: 
   rb: {fileID: 0}
   whatIsEnemy:
     serializedVersion: 2
@@ -755,8 +755,8 @@ Transform:
   m_GameObject: {fileID: 2234901928539771051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7301, y: 0.092, z: 8.34}
-  m_LocalScale: {x: 18.772985, y: 18.772985, z: 18.772985}
+  m_LocalPosition: {x: -7.7622, y: -0.053, z: 8.3014}
+  m_LocalScale: {x: 29.121738, y: 29.121738, z: 29.121738}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7113319752008314059}
@@ -1449,8 +1449,8 @@ Transform:
   m_GameObject: {fileID: 5382188581396710530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.028941626, y: -1.3189188, z: 0.07400034}
-  m_LocalScale: {x: 18.772982, y: 50.737797, z: 18.772982}
+  m_LocalPosition: {x: -0.049563, y: -1.53, z: 0.049268}
+  m_LocalScale: {x: 25.411108, y: 68.67868, z: 25.411108}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3978087479426316596}
