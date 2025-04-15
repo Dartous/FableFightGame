@@ -2099,7 +2099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -245.116, y: 57.967243}
+  m_AnchoredPosition: {x: -267.9, y: 65.78781}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &475905570
@@ -2314,7 +2314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.9, y: -18.4}
+  m_AnchoredPosition: {x: 5.4, y: -18.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516980979
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SkullThrower
+  m_text: 'SkullThrower: 100'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
   m_sharedMaterial: {fileID: -1368151977483163472, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -15.905548, w: 0}
+  m_margin: {x: -27.399986, y: 0, z: -15.905548, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2740,7 +2740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -84.644394, y: 65.1378}
+  m_AnchoredPosition: {x: -80, y: 72.958374}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610138971
@@ -4332,7 +4332,7 @@ GameObject:
   - component: {fileID: 881984993}
   - component: {fileID: 881984992}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4430,7 +4430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: -19.22845}
+  m_AnchoredPosition: {x: 11.7, y: -19.22845}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884211497
@@ -4453,7 +4453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gelatinous Cube
+  m_text: 'Gelatinous Cube: 75'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
   m_sharedMaterial: {fileID: -1368151977483163472, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
@@ -4516,7 +4516,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -15.905548, w: 0}
+  m_margin: {x: -43.03753, y: 0, z: -15.905548, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5064,7 +5064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.3, y: -15.370582}
+  m_AnchoredPosition: {x: -16.2, y: -15.370582}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1163224513
@@ -5087,7 +5087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wizard Hat
+  m_text: 'Wizard Hat: 50'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
   m_sharedMaterial: {fileID: -1368151977483163472, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
@@ -5364,7 +5364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 92.57985, y: 58.479435}
+  m_AnchoredPosition: {x: 110, y: 66.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236440000
@@ -6404,7 +6404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.9, y: -13.6}
+  m_AnchoredPosition: {x: -8.3, y: -13.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563073900
@@ -6427,7 +6427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mushroom
+  m_text: 'Mushroom: 125'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
   m_sharedMaterial: {fileID: -1368151977483163472, guid: 84066300665d8074f9b7abbbfed2654c, type: 2}
@@ -6490,7 +6490,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 12.975725, z: 0, w: 0}
+  m_margin: {x: 0, y: 12.975725, z: -19.407616, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7701,7 +7701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 272.32318, y: 58.27456}
+  m_AnchoredPosition: {x: 302, y: 66.09514}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910699478
@@ -8553,7 +8553,7 @@ GameObject:
   - component: {fileID: 2120109987}
   - component: {fileID: 2120109986}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PauseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8568,7 +8568,7 @@ RectTransform:
   m_GameObject: {fileID: 2120109984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4331, y: 7.1654997, z: 1.4331}
+  m_LocalScale: {x: 1.3068168, y: 5.202296, z: 1.0404593}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 723824383}
@@ -8655,7 +8655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: decfaf998991603409b079d3edb3074f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 437b7ff1c2a116146ad1ec495d9aee39, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
