@@ -143,9 +143,9 @@ MonoBehaviour:
   damagable: 0
   forceAffected: 0
   bullet: {fileID: 0}
-  walkingSound: 
-  attackSound: 
   getHitSound: 
+  attackSound: 
+  gruntSound: 
   rb: {fileID: 0}
   whatIsEnemy:
     serializedVersion: 2
@@ -191,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 412590706428881555}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ba2f155293cf6042b1e5ccdf3d45b23, type: 2}
+  m_Controller: {fileID: 9100000, guid: 800c9f5ac7bc2de4b9514d923c09eb61, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
