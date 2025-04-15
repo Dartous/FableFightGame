@@ -17,14 +17,14 @@ MonoBehaviour:
   hp: 4
   attackForce: 10
   attackDamage: 1
-  attackSpeed: 1
-  attackRange: 50
+  attackSpeed: 2.25
+  attackRange: 17
   attackLanes: 0
   cost: 100
   enemy: 0
   damagable: 1
   forceAffected: 0
   bullet: {fileID: 5404157376493548953, guid: d708105c3aaa5874c9269a6a53937a14, type: 3}
-  walkingSound: 
-  attackSound: SkullThrowerAttack
   getHitSound: SkullThrowerGetHit
+  attackSound: SkullThrowerAttack
+  gruntSound: 

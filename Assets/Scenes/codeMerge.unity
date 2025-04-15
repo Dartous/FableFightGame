@@ -4205,7 +4205,6 @@ MonoBehaviour:
   ManagerScript: {fileID: 822267811}
   griddy: {fileID: 1389879116}
   canvas: {fileID: 822267807}
-  animator: {fileID: 822267812}
   mainPause: {fileID: 1223846842}
   PauseBack: {fileID: 1649591002}
   Settings: {fileID: 1507229416}
@@ -8856,7 +8855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: knowledge
-      value: 500
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 3667908969449208655, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: knowledgeBank
@@ -8864,7 +8863,7 @@ PrefabInstance:
       objectReference: {fileID: 1429686221}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: spawnRate
-      value: 20
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: waveNumbertxt
@@ -8872,11 +8871,15 @@ PrefabInstance:
       objectReference: {fileID: 16657705}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: firstSpawnDelay
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: enemies.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: startingWaveStrength
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: enemies.Array.data[2]
