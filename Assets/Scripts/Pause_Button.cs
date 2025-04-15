@@ -25,6 +25,7 @@ public class Pause_Button : MonoBehaviour
 
     public void Pause()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         if (!ManagerScript.paused)
         {
             print("I");
@@ -38,6 +39,7 @@ public class Pause_Button : MonoBehaviour
     }
     public void PauseInverse()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         if (ManagerScript.paused)
         {
             Time.timeScale = 1;
@@ -51,12 +53,14 @@ public class Pause_Button : MonoBehaviour
 
     public void Setttings()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         mainPause.SetActive(false);
         Settings.SetActive(true);
     }
 
     public void Back()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         mainPause.SetActive(true);
         Settings.SetActive(false);
     }

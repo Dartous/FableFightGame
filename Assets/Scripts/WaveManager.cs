@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class WaveManager : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class WaveManager : MonoBehaviour
     public GameObject[] spawnPositionsWave3;
     public GameObject[] spawnPositionsWave6;
     private GameObject[] currentSpawnPositions;
-    public int waveCounter;
+    public TMP_Text waveNumbertxt;
+    private int waveCounter;
 
     [Header("Unavailable lanes")]
     public GameObject[] unavailableLanes;
@@ -41,6 +43,7 @@ public class WaveManager : MonoBehaviour
         currentWaveStrength = startingWaveStrength;
         currentSpawnRate = spawnRate;
         waveCounter = 1;
+        waveNumbertxt.text = waveCounter.ToString();
         currentSpawnPositions = spawnPositionsWave1;
 
         InvokeRepeating("SpawnEnemies", firstSpawnDelay, currentSpawnRate);
@@ -48,6 +51,9 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemies ()
     {
+        //update the wave counter text
+        waveNumbertxt.text = waveCounter.ToString();
+
         //set temp wave strength for the loop
         int tempWaveStrength = currentWaveStrength;
 

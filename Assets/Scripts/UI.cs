@@ -43,18 +43,22 @@ public class UI : MonoBehaviour
     }
     public void Hat_TSelect()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 0;
     }
     public void Skull_TSelect()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 1;
     }
     public void Mush_TSelect()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 3;
     }
     public void GC_TSelect()
     {
+        FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 2;
     }
     IEnumerator PopupLoop()
@@ -78,6 +82,7 @@ public class UI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            FindObjectOfType<SoundScript>().Play("Click", 0.5f);
             if (PassedTime < LengthofTime && is_MenuAnimComplete)
             {
                 StartCoroutine("PopupLoop");
