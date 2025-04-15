@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 0
   moveSpeed: 0
-  hp: 10
+  hp: 25
   attackForce: 0
   attackDamage: 0
   attackSpeed: 0
@@ -25,6 +25,6 @@ MonoBehaviour:
   damagable: 1
   forceAffected: 0
   bullet: {fileID: 0}
-  walkingSound: 
-  attackSound: 
   getHitSound: GelatinousCubeGetHit
+  attackSound: 
+  gruntSound: 

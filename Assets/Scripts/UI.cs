@@ -15,6 +15,11 @@ public class UI : MonoBehaviour
     private float PassedTime;
     private float LengthofTime;
     private bool is_MenuAnimComplete;
+    public Image hatImg;
+    public Image SkullImg;
+    public Image MushroomImg;
+    public Image CubeImg;
+    private Image focusImg;
     // Start is called before the first frame update
 
     public void Awake()
@@ -23,6 +28,11 @@ public class UI : MonoBehaviour
         UIShown_YPos = 90;
         LengthofTime = 0.2f;
         is_MenuAnimComplete = true;
+    }
+
+    public void Start()
+    {
+        focusImg = hatImg;
     }
 
     public void MenuAppearTransition()
@@ -45,22 +55,37 @@ public class UI : MonoBehaviour
     {
         FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 0;
+
+        setFocusImg(hatImg);
     }
     public void Skull_TSelect()
     {
         FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 1;
+
+        setFocusImg(SkullImg);
     }
     public void Mush_TSelect()
     {
         FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 3;
+
+        setFocusImg(MushroomImg);
     }
     public void GC_TSelect()
     {
         FindObjectOfType<SoundScript>().Play("Click", 0.5f);
         Build.scrollval = 2;
+
+        setFocusImg(CubeImg);
     }
+    public void setFocusImg(Image img)
+    {
+        focusImg.rectTransform.sizeDelta = new Vector2(160, 30);
+        focusImg = img;
+        focusImg.rectTransform.sizeDelta = new Vector2(220, 50);
+    }
+
     IEnumerator PopupLoop()
     {
         is_MenuAnimComplete = false;
@@ -71,6 +96,13 @@ public class UI : MonoBehaviour
         }
         yield return null;
         print("done");
+    }
+
+    public void setFocusImgSize (Image img)
+    {
+        focusImg.rectTransform.sizeDelta = new Vector2(160, 30);
+        focusImg = img;
+        focusImg.rectTransform.sizeDelta = new Vector2(200, 50);
     }
 
     public void PlaceholderModel2()
