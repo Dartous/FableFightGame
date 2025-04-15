@@ -16,6 +16,9 @@ public class WaveManager : MonoBehaviour
     private GameObject[] currentSpawnPositions;
     public int waveCounter;
 
+    [Header("Unavailable lanes")]
+    public GameObject[] unavailableLanes;
+
     [Header("Wave Stats")]
     public float firstSpawnDelay = 2;
     public float spawnRate = 5;
@@ -104,11 +107,15 @@ public class WaveManager : MonoBehaviour
         if (waveCounter == 3)
         {
             currentSpawnPositions = spawnPositionsWave3;
+            Destroy(unavailableLanes[1]);
+            Destroy(unavailableLanes[2]);
         }
 
         if (waveCounter == 6)
         {
             currentSpawnPositions = spawnPositionsWave6;
+            Destroy(unavailableLanes[0]);
+            Destroy(unavailableLanes[3]);
         }
 
         //increase wave strength
