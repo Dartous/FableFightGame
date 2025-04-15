@@ -8723,6 +8723,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
+      propertyPath: enemies.Array.data[3]
+      value: 
+      objectReference: {fileID: 412590706428881555, guid: 7d70d0ceb33db4f488a4246b58a95a61, type: 3}
+    - target: {fileID: 3753644182719038311, guid: a4ec6912c69154a42a4eccaef2c0eee0, type: 3}
       propertyPath: unavailableLanes.Array.size
       value: 4
       objectReference: {fileID: 0}
