@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5621042130436782951}
   - component: {fileID: 8330159163177145314}
   - component: {fileID: 8233591821148040783}
+  - component: {fileID: 2871612523854456785}
   m_Layer: 7
   m_Name: BlackSmithEnemy
   m_TagString: Untagged
@@ -142,6 +143,9 @@ MonoBehaviour:
   damagable: 0
   forceAffected: 0
   bullet: {fileID: 0}
+  walkingSound: 
+  attackSound: 
+  getHitSound: 
   rb: {fileID: 0}
   whatIsEnemy:
     serializedVersion: 2
@@ -177,6 +181,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &2871612523854456785
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412590706428881555}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ba2f155293cf6042b1e5ccdf3d45b23, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &588259619846520778
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,10 +383,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5055934693381354902, guid: df3bff7cd66bcd446a17c1b75ad160db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7836739670505920523}
   m_SourcePrefab: {fileID: 100100000, guid: df3bff7cd66bcd446a17c1b75ad160db, type: 3}
 --- !u!4 &4727990858840014980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5575906573464760108, guid: df3bff7cd66bcd446a17c1b75ad160db, type: 3}
   m_PrefabInstance: {fileID: 935811795482177448}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5392746154666777150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5055934693381354902, guid: df3bff7cd66bcd446a17c1b75ad160db, type: 3}
+  m_PrefabInstance: {fileID: 935811795482177448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7836739670505920523
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5392746154666777150}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afc94b61f3b3a134aa29a9c01567535d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
