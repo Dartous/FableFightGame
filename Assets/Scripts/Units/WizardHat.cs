@@ -53,6 +53,12 @@ public class WizardHat : MonoBehaviour
 
             //Idle animation/stuff
             Idle();
+
+            //play animation if readyTOBE Collected
+            if (readyToBeCollected)
+            {
+                animator.SetBool("canCollect", true);
+            }
         }
             
     }
@@ -111,6 +117,9 @@ public class WizardHat : MonoBehaviour
 
             //set ready to be collected to false
             readyToBeCollected = false;
+
+            //disable animation
+            animator.SetBool("canCollect", false);
         }
         else if (!readyToBeCollected)
         {
