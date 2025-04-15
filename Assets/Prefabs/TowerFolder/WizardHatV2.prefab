@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 8524393920885521773}
   - component: {fileID: 8911062095087216475}
   - component: {fileID: 6218656969753542276}
+  - component: {fileID: 1990031455635828879}
   m_Layer: 6
   m_Name: WizardHat
   m_TagString: Untagged
@@ -208,6 +209,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88703e04820325c43a04feaf24e49bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1990031455635828879
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352690016717685251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d32cf40070b922247adff12cf56c4dac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4438572869735323857
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604832287518911839}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.009600009, y: -0.005341407, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.009600003, y: -0.0053414106, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5744848037006682320}
+  m_Father: {fileID: 1472026123105657522}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &741943799554570779
 MeshFilter:
@@ -106,6 +106,39 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5750084716789328873, guid: d87042c40bbf7fb48b45a515555d01df, type: 3}
+--- !u!1 &1463861766473963180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472026123105657522}
+  m_Layer: 6
+  m_Name: Feet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472026123105657522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463861766473963180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5389424614436339101}
+  - {fileID: 8778553497147339543}
+  m_Father: {fileID: 5744848037006682320}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1645471664052322973
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,12 +834,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6556056100670607094}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.011199996, y: -0.005341407, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.011200001, y: -0.0053414106, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5744848037006682320}
+  m_Father: {fileID: 1472026123105657522}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &4227526942299192270
 MeshFilter:
@@ -1213,6 +1246,7 @@ GameObject:
   - component: {fileID: 2423749374627422505}
   - component: {fileID: 372782593085199273}
   - component: {fileID: 8472914238340455418}
+  - component: {fileID: 3612181317923169517}
   m_Layer: 6
   m_Name: MushroomGuy
   m_TagString: Untagged
@@ -1340,9 +1374,9 @@ MonoBehaviour:
   damagable: 0
   forceAffected: 0
   bullet: {fileID: 0}
-  walkingSound: 
-  attackSound: 
   getHitSound: 
+  attackSound: 
+  gruntSound: 
   rb: {fileID: 0}
   whatIsEnemy:
     serializedVersion: 2
@@ -1390,6 +1424,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88703e04820325c43a04feaf24e49bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3612181317923169517
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136674105810668256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b5df648b83a09e4abad93ef7c1035f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7149934508680931350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,8 +1591,7 @@ Transform:
   - {fileID: 3338043890842936744}
   - {fileID: 7412836552069323493}
   - {fileID: 9109208648451280530}
-  - {fileID: 5389424614436339101}
-  - {fileID: 8778553497147339543}
+  - {fileID: 1472026123105657522}
   m_Father: {fileID: 189049645750978855}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &8055093217021668776
