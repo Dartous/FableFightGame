@@ -21,6 +21,8 @@ public class GridPlacing : MonoBehaviour
     public List<Vector3> TakenPositions = new List<Vector3>();
     public Dictionary<Vector3, GameObject> InstantiatedObjDict = new Dictionary<Vector3, GameObject>();
     public List<GameObject> Asset = new List<GameObject>();
+    static LayerMask LUI;
+
 
     public DeleteScript RemoveObj;
 
@@ -29,6 +31,8 @@ public class GridPlacing : MonoBehaviour
         current = this;
         grid = gridLayout.gameObject.GetComponent<Grid>();
     }
+
+
 
     //public static Vector3 GetMouseWorldPosition()
     //{
@@ -47,6 +51,7 @@ public class GridPlacing : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit rc_hit) && rc_hit.collider.tag == "GridObject")
         {
+            print(rc_hit.collider.gameObject);
             return rc_hit.point;
         }
         else
@@ -98,15 +103,19 @@ public class GridPlacing : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            cellPos = GetMouseWorldPosition();
-            Vector3Int d = grid.WorldToCell(cellPos);
-            Vector3 Centre_be_Centre = grid.GetCellCenterWorld(d);
-            Vector3 realcell = grid.CellToWorld(d);
-            int AssetType = scrollval;
-            print(scrollval);
-            print(Centre_be_Centre);
-            ObjectInstantiate(Centre_be_Centre, Asset[scrollval]);
-            print(Asset[scrollval].name);
+            if (GetMouseWorldPosition() == Vector3.zero) { return; }
+            else
+            {
+                cellPos = GetMouseWorldPosition();
+                Vector3Int d = grid.WorldToCell(cellPos);
+                Vector3 Centre_be_Centre = grid.GetCellCenterWorld(d);
+                Vector3 realcell = grid.CellToWorld(d);
+                int AssetType = scrollval;
+                print(scrollval);
+                print(Centre_be_Centre);
+                ObjectInstantiate(Centre_be_Centre, Asset[scrollval]);
+                print(Asset[scrollval].name);
+            }
         }
         if (Input.GetMouseButtonDown(1))
         {
@@ -141,9 +150,6 @@ public class GridPlacing : MonoBehaviour
                 {
                     WizardHatInstatiate(cepos, objec);
                     gameScript.knowledge -= costs[0];
-
-                    //play sound
-                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
                 }
                 else
                 {
@@ -157,9 +163,6 @@ public class GridPlacing : MonoBehaviour
                 {
                     SkullThrowerInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[1];
-
-                    //play sound
-                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
                 }
                 else
                 {
@@ -170,9 +173,6 @@ public class GridPlacing : MonoBehaviour
             {
                 if (gameScript.knowledge >= costs[3])
                 {
-                    //play sound
-                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
-
                     MushroomInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[3];
                 }
@@ -185,9 +185,6 @@ public class GridPlacing : MonoBehaviour
             {
                 if (gameScript.knowledge >= costs[2])
                 {
-                    //play sound
-                    FindObjectOfType<SoundScript>().Play("Place", 0.5f);
-
                     SlimeInstantiate(cepos, objec);
                     gameScript.knowledge -= costs[2];
                 }
