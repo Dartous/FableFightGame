@@ -3159,7 +3159,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7381,11 +7381,10 @@ MonoBehaviour:
     loop: 0
   soundSource: {fileID: 1794430722}
   Tracks:
-  - {fileID: 8300000, guid: 2ab35926c979f764ba83b5df40689912, type: 3}
-  - {fileID: 8300000, guid: 948435de68945d84c8646969c2dc67ff, type: 3}
-  - {fileID: 8300000, guid: 1b94ea51b6dbd45469750ef8108f251d, type: 3}
-  - {fileID: 8300000, guid: 1c04cb688c5dfbc419ea34c119af14c8, type: 3}
-  - {fileID: 8300000, guid: 369fb47166b1f5f41b0da9a131ee2f0a, type: 3}
+  - {fileID: 8300000, guid: 7e5ba652099d1914fa1b4c101e929840, type: 3}
+  - {fileID: 8300000, guid: 2d0f48f23f47de9459b15a6613d75d4c, type: 3}
+  - {fileID: 8300000, guid: bdbfaf9db5c46634aa4e116a84111298, type: 3}
+  - {fileID: 8300000, guid: 4639e9052ff9fe148b1909d2584236b1, type: 3}
   musicSource: {fileID: 693844693}
 --- !u!4 &1794430721
 Transform:
