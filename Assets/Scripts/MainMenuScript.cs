@@ -10,7 +10,11 @@ public class MainMenuScript : MonoBehaviour
 
     private void Start()
     {
-        wave.text = WaveManager.waveCounter.ToString();
+        try
+        {
+            wave.text = WaveManager.waveCounter.ToString();
+        }
+        catch { }
     }
 
     public void PlayGame()
