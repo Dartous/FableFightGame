@@ -125,6 +125,14 @@ public class GridPlacing : MonoBehaviour
             DeleteInstantiatedObj(Centre_be_Centre);
         }
     }
+
+    public void UnitDead(Vector3 Pos)
+    {
+        Vector3Int d = grid.WorldToCell(Pos);
+        Vector3 Centre_be_Centre = grid.GetCellCenterWorld(d);
+        DeleteInstantiatedObj(Centre_be_Centre);
+    }
+
     public void DeleteInstantiatedObj(Vector3 cepos)
     {
         if (InstantiatedObjDict.ContainsKey(cepos))

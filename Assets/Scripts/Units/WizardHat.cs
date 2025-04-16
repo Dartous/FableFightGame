@@ -73,6 +73,9 @@ public class WizardHat : MonoBehaviour
         if (hp <= 0)
         {
             isDead = true;
+            GridPlacing gp = FindAnyObjectByType<GridPlacing>();
+            gp.UnitDead(this.transform.position);
+            Destroy(this.transform.parent.gameObject);
             Destroy(this.gameObject);
         }
     }
