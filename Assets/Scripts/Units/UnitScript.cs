@@ -142,7 +142,11 @@ public class UnitScript : MonoBehaviour
             isDead = true;
             GridPlacing gp = FindAnyObjectByType<GridPlacing>();
             gp.UnitDead(this.transform.position);
-            Destroy(this.transform.parent.gameObject);
+
+            if (!unitType.enemy)
+            {
+                Destroy(this.transform.parent.gameObject);
+            }
             Destroy(this.gameObject);
         }
     }
